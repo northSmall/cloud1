@@ -26,6 +26,7 @@ import org.apache.http.util.EntityUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class IndexController {
@@ -34,8 +35,8 @@ public class IndexController {
 	private static final long yourMaxRequestSize = 10000000;
  
 	@RequestMapping("/")
+	@ResponseBody
 	public String index(Model model) throws IOException {
- 
 		return "/index";
 	}
  
