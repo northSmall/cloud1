@@ -9,7 +9,7 @@ public class SyncProducer {
     public static void main(String[] args) throws Exception {
         //Instantiate with a producer group name.
         DefaultMQProducer producer = new
-            DefaultMQProducer("please_rename_unique_group_name");
+            DefaultMQProducer("group-a");
         // Specify name server addresses.
         producer.setNamesrvAddr("localhost:9876");
         //Launch the instance.

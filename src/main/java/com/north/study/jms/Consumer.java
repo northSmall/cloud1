@@ -14,7 +14,7 @@ public class Consumer {
     public static void main(String[] args) throws InterruptedException, MQClientException {
 
         // Instantiate with specified consumer group name.
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("please_rename_unique_group_name");
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("group-a");
          
         // Specify name server addresses.
         consumer.setNamesrvAddr("localhost:9876");
