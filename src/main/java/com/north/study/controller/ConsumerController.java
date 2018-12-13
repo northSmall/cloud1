@@ -31,7 +31,7 @@ public class ConsumerController {
         //3. 设置消息的提取顺序
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
         //4. 设置消费者接收消息的Topic和Tag，此处对Tag不作限制
-        consumer.subscribe("test_topic", "*");
+        consumer.subscribe("TopicTest", "*");
         
         //5. 使用监听器接收消息
         consumer.registerMessageListener(new MessageListenerConcurrently() {

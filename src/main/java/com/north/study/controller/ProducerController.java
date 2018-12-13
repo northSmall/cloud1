@@ -33,7 +33,7 @@ public class ProducerController {
         producer.start();
         
         //4. 构造消息(重载方法较多，此处选择topic, tag, message的三参数方法)
-        Message message = new Message("test_topic", "test_tag", ("test_message。。。" + Math.random()).getBytes());
+        Message message = new Message("TopicTest", "test_tag", ("test_message。。。" + Math.random()).getBytes());
         //5. 发送消息，该方法会返回一个发送结果的对象
         SendResult result = producer.send(message);
         System.out.println(result.getSendStatus());
